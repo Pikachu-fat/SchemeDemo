@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SchemeDemo</string>
+    <string name="inneractivity">interactivity</string>
+    <string name="schemeactivity">schemeactivity</string>
+</resources>
