@@ -19,9 +19,12 @@ public class InnerActivity extends AppCompatActivity {
             Uri uri = intent.getData();
             if (uri != null){
                 StringBuilder sb = new StringBuilder();
+                sb.append("URI："+uri.toString()+"\n");
                 sb.append("获取到的scheme是:"+uri.getScheme()+"\n");
                 sb.append("获取到的host是:"+uri.getHost()+"\n");
+                sb.append("获取到的port是:"+uri.getPort()+"\n");
                 sb.append("获取到的path是:"+uri.getPath()+"\n");
+                sb.append("获取到的query是:"+uri.getQuery()+"\n");
                 sb.append("第一个参数appid:"+uri.getQueryParameter("appid")+"\n");
                 sb.append("第二个参数password:"+uri.getQueryParameter("password"));
                 textView.setText(sb.toString());
